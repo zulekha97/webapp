@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>first page</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<form action="" name="Form" 
+onsubmit="return validateForm()"  method="POST">
+ <script type="text/javascript">
+function validateForm() {
+    var x = document.forms["Form"]["Fname"].value;
+    if (x == "") {
+        alert("first name must be filled out");
+        return false;
+    }
+     var l = document.forms["Form"]["lname"].value;
+    if (l == "") {
+        alert("Last name must be filled out");
+        return false;
+    }
+   var y = document.forms["Form"]["Mname"].value;
+    if (y == "") {
+        alert("Middle name must be filled out");
+        return false;
+    } 
+    var z = document.forms["Form"]["Mname"].value;
+    if (z == "") {
+        alert("last name must be filled out");
+        return false;
+    } 
+    var e = document.forms["Form"]["email"].value;
+    if (e == "") {
+        alert("e-mail is required");
+        return false;
+    } 
+    var g = document.forms["Form"]["gender"].value;
+    if (g == "") {
+        alert("Gender must be filled out");
+        return false;
+    } 
+    var d = document.forms["Form"]["DOB"].value;
+    if (d == "") {
+        alert("you forget date of birth");
+        return false;
+    } 
+}
+
+}
+</script>
+	<h2>Registration Form</h2>
+	
+  <div class="form-group">
+	<label for="fnamne">First Name</label>
+<input type="text" name="Fname" id="name" class="form-control"></div>
+
+	<div class="form-group">
+		<label for="mname">Middle Name</label>
+	<input type="text" name="Mname" id="name" class="form-control">
+</div>
+<div class="form-group">
+	<label for="lname">Last Name</label>
+	<input type="text" name="lname" id="name" class="form-control">
+</div>
+<div class="form-group">
+	<label>Gender</label>
+	<input type="radio" name="gender" id="g1">Male<br>
+	<input type="radio" name="gender" id="g1">Female<br>
+	<input type="radio" name="gender" id="g1" >Other
+</div>
+<div class="form-group">
+	<label>E-mail</label>
+	<input type="email" name="email" id="email" class="form-control"></div>
+<div class="form-group" >
+	<label>Phone number</label>
+	<input type="phone" name="number" id="no" class="form-control">
+</div>
+<div>
+	<label class="form-group">Date of birth</label>
+	<input type="date" name="DOB" id="DOB" class="form-control">
+</div>
+<div class="form-group">
+	<label>Level of Study</label>
+	<select type="text" name="level" id="lv" class="form-control">
+		<option>O-Level</option>
+		<option>A-Level</option>
+		<option>Certificate</option>
+		<option>Diploma</option>
+		<option>Degree</option>
+	</select>
+</div>
+<div>
+	<input type="submit" name="register" value="register">
+</div>
+
+
+</form>
+</body>
+</html>
